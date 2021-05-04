@@ -1,0 +1,23 @@
+﻿@model IEnumerable<GeneralStore.MVC.Models.Product>
+
+
+<div class="jumbotron">
+    <h2>General Store</h2>
+    @*<p>@Html.ActionLink("About", "About Us")</p>*@
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Products</h2>
+        <p>
+            Our General Store, located in Indiana, is host to a multitude of fine food items of distinction.<br />
+            Come browse our products and see what we have for you.
+        </p>
+        <p>@Html.ActionLink("Check Products", "Index", "Product", null, new { @class = "btn btn-primary btn-large" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>About</h2>
+        <p> General Store opened it's doors in 1977. Since then, we have been the standard in providers of acces to home-produced items and speciality foods.</p>
+        <p>@Html.ActionLink("About Us", "Index", "About", null, new { @class = "btn btn-primary btn-large" })</p>
+    </div>
+</div>
